@@ -1,0 +1,25 @@
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  justify-content: space-between;
+  //   background: red;
+  padding: 4em 1em;
+  // width: 90%;
+  flex-wrap: wrap;
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+// Variables
+$primary-color: hsl(300, 43%, 22%);
+$primary-color--soft: hsl(333, 80%, 67%);
+$body-font-size: 15px;
+$white: hsl(0, 0%, 100%);
+
+$testimonial-quote-color: hsl(303, 10%, 53%);
+
+$rating-box-color: hsl(300, 24%, 96%);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Spartan", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  //   font-size: 15px;
+  font-size: 0.9375rem;
+  color: $testimonial-quote-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.625em;
+  color: $primary-color;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  line-height: 1em;
+  text-align: center;
+}
+
+.section-desc {
+  text-align: center;
+}

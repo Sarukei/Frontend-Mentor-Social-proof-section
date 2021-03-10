@@ -1,0 +1,71 @@
+// Rating box card
+.rating {
+  background: $rating-box-color;
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  // flex-grow: 1;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+
+  flex-direction: column;
+
+  &__stars {
+    color: goldenrod;
+    margin-bottom: 1em;
+    // display: flex;
+  }
+
+  &__text {
+    color: $primary-color;
+    font-weight: 700;
+  }
+}
+
+// Testimonial Cards
+.testimonial {
+  background: $primary-color;
+  padding: 2em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+
+  &__header {
+    display: flex;
+    // align-items: center;
+    margin-bottom: 2em;
+    // max-height: 2em;
+  }
+
+  &__profile-img {
+    margin-right: 2em;
+    border-radius: 100%;
+    // flex-grow: 1;
+  }
+
+  &__author-info {
+    display: flex;
+    //   flex-grow: 8;
+    //   background: red;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+  }
+
+  &__title {
+    color: $rating-box-color;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    color: $primary-color--soft;
+  }
+
+  &__quote {
+    color: $rating-box-color;
+    font-weight: 500;
+  }
+}
