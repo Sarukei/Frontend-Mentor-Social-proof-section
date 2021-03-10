@@ -1,34 +1,117 @@
+// Message Section
+
+.message {
+  //   width: 100%;
+  margin-bottom: 1em;
+  @media screen and (min-width: $desktop-layout-breakpoint) {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    // display: inline-block;
+    margin-right: 2em;
+  }
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.625em;
+    color: $primary-color;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    text-align: center;
+    transition: all 0.5s;
+
+    @media screen and (min-width: 375px) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 215px) {
+      font-size: 2.25rem;
+    }
+    @media screen and (min-width: 639px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (min-width: $desktop-layout-breakpoint) {
+      font-size: 2.75rem;
+      text-align: start;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    font-weight: 500;
+
+    @media screen and (min-width: $desktop-layout-breakpoint) {
+      text-align: start;
+    }
+  }
+}
+
 // Rating box card
 .rating {
   background: $rating-box-color;
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: 100%;
+  //   flex-wrap: wrap;
+  //   flex: 1 1 100%;
+  //   flex-basis: 100%;
   width: 100%;
   padding: 1em;
   margin-bottom: 1em;
   border-radius: 0.5em;
   flex-direction: column;
-  max-width: 30rem;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: $desktop-layout-breakpoint) {
+    width: 95%;
+    flex-direction: row;
+    // justify-content: flex-start;
+    // padding-right: 5.3em;
+    // padding-left: 5.3em;
+    margin-bottom: 0;
+
+    // padding-top: 1.5em;
+    // padding-bottom: 1.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: initial;
+    // flex-basis: 100%;
+    // flex-grow: 1;
+
+    max-width: 30em;
+
     &:first-of-type {
-      margin-right: 4em;
+      margin-right: 20%; //8em;
+    }
+
+    &:nth-of-type(2) {
+      margin-right: 10%; //4em;
     }
 
     &:last-of-type {
-      margin-left: 4em;
+      //   margin-left: 4em;
+      margin-bottom: 0;
     }
   }
 
   &__stars {
     color: goldenrod;
+    justify-content: center;
     margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+
+    text-align: center;
+
+    @media screen and (min-width: $desktop-layout-breakpoint) {
+      margin-bottom: initial;
+      margin-right: 1em;
+    }
   }
 
   &__text {
     color: $primary-color;
-    font-weight: 700;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -51,13 +134,16 @@
   &__header {
     display: flex;
     // align-items: center;
+    justify-content: flex-start;
     margin-bottom: 2em;
-    // max-height: 2em;
   }
 
   &__profile-img {
     margin-right: 2em;
     border-radius: 100%;
+    align-self: flex-start;
+    max-height: 3em;
+    display: block;
   }
 
   &__author-info {
@@ -72,13 +158,13 @@
     color: $rating-box-color;
     font-size: 0.8rem;
     font-weight: 700;
-    margin-top: 1.066em;
+    // margin-top: 1.066em;
   }
 
   &__subtitle {
     font-weight: 500;
     color: $primary-color--soft;
-    margin-bottom: 1.066em;
+    // margin-bottom: 1.066em;
   }
 
   &__quote {

@@ -25,6 +25,15 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5em;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -34,44 +43,47 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <h2 class="section-title">10,000+ of our<br /> users love our<br /> products.</h2>
-        <p class="section-desc">
-          We only provide great products combined with excellent customer
-          service. See what our satisfied customers are saying about our
-          services.
-        </p>
+      <div class="container section-header">
+        <div class="container message">
+          <h2 class="message__title">
+            10,000+ of our users love our products.
+          </h2>
+          <p class="message__desc">
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </div>
+        <ul class="container ratings">
+          <li class="rating">
+            <span class="rating__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </span>
+            <span class="rating__text">Rated 5 Stars in Reviews</span>
+          </li>
+          <li class="rating">
+            <span class="rating__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </span>
+            <span class="rating__text">Rated 5 Stars in Report Guru</span>
+          </li>
+          <li class="rating">
+            <span class="rating__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </span>
+            <span class="rating__text">Rated 5 Stars in BestTech</span>
+          </li>
+        </ul>
       </div>
-      <ul class="container ratings">
-        <li class="rating">
-          <span class="rating__stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i>
-          </span>
-          <span class="rating__text">Rated 5 Stars in Reviews</span>
-        </li>
-        <li class="rating">
-          <span class="rating__stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i>
-          </span>
-          <span class="rating__text">Rated 5 Stars in Report Guru</span>
-        </li>
-        <li class="rating">
-          <span class="rating__stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i><i class="fas fa-star"></i
-            ><i class="fas fa-star"></i>
-          </span>
-          <span class="rating__text">Rated 5 Stars in BestTech</span>
-        </li>
-      </ul>
 
       <!-- TESTIMONIALS -->
       <ul class="testimonials">
-        
         <li class="testimonial">
           <header class="testimonial__header">
             <img
@@ -89,53 +101,53 @@
             prior. Not only did they find the original order, but we also
             received it in time. Excellent!"
           </p>
-        
-          <li class="testimonial">
-            <header class="testimonial__header">
-              <img
-                src="./images/image-colton.jpg"
-                alt="Profile image of user"
-                class="testimonial__profile-img"
-              />
-              <div class="testimonial__author-info">
-                <h3 class="testimonial__title">Irene Roberts</h3>
-                <span class="testimonial__subtitle">Verified Buyer</span>
-              </div>
-            </header>
-            <p class="testimonial__quote">
-              "Customer service is always excellent and very
-              quick turn around. Completely delighted with the simplicity of the purchase
-              and the speed of delivery."
-            </p>
-        
-            <li class="testimonial">
-              <header class="testimonial__header">
-                <img
-                  src="./images/image-colton.jpg"
-                  alt="Profile image of user"
-                  class="testimonial__profile-img"
-                />
-                <div class="testimonial__author-info">
-                  <h3 class="testimonial__title">Anne Wallace</h3>
-                  <span class="testimonial__subtitle">Verified Buyer</span>
-                </div>
-              </header>
-              <p class="testimonial__quote">
-                "Put an order with
-                this company and can only praise them for the very high standard. Will
-                definitely use them again and recommend them to everyone!"
-              </p>
+        </li>
 
+        <li class="testimonial">
+          <header class="testimonial__header">
+            <img
+              src="./images/image-irene.jpg"
+              alt="Profile image of user"
+              class="testimonial__profile-img"
+            />
+            <div class="testimonial__author-info">
+              <h3 class="testimonial__title">Irene Roberts</h3>
+              <span class="testimonial__subtitle">Verified Buyer</span>
+            </div>
+          </header>
+          <p class="testimonial__quote">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </p>
+        </li>
+
+        <li class="testimonial">
+          <header class="testimonial__header">
+            <img
+              src="./images/image-anne.jpg"
+              alt="Profile image of user"
+              class="testimonial__profile-img"
+            />
+            <div class="testimonial__author-info">
+              <h3 class="testimonial__title">Anne Wallace</h3>
+              <span class="testimonial__subtitle">Verified Buyer</span>
+            </div>
+          </header>
+          <p class="testimonial__quote">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </p>
         </li>
       </ul>
-    </div>
-    
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sarukei</a>.
+      </div>
     </div>
   </body>
 </html>
