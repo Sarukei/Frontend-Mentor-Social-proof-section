@@ -15,4 +15,4 @@
 .DS_Store
 
 # Ignore public files that can be rebuilt.
-public
+*.map
